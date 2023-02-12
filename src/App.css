@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background: #ed4a89;
+  color: #fff
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark-bg {
+  background: #cf3f76;
+}
+
+.light-bg {
+  background: #df4782;
+}
