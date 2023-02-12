@@ -48,7 +48,7 @@
   width: 100%;
   flex-direction: column;
   height: auto;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
 }
 

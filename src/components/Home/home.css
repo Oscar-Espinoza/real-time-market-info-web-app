@@ -1,5 +1,7 @@
 .stats-container {
-  font-family: Lato; font-style: normal; font-variant: normal;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-variant: normal;
 }
 
 .front-img-container {
@@ -21,7 +23,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(90deg, rgba(36,0,13,0.5914740896358543) 0%, rgba(121,9,66,0.7511379551820728) 100%);
+  background: linear-gradient(90deg, rgba(36, 0, 13, 0.5914740896358543) 0%, rgba(121, 9, 66, 0.7511379551820728) 100%);
   color: white;
   text-align: right;
 }
@@ -29,7 +31,9 @@
 .front-text {
   padding-right: 10px;
   padding-top: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; font-style: normal; font-variant: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-style: normal;
+  font-variant: normal;
 }
 
 .front-text h2 {
@@ -64,7 +68,7 @@
 .stats-title {
   color: #fff;
   font-size: 14px;
-  padding: 2px 0px 2px 10px
+  padding: 2px 0 2px 10px;
 }
 
 ul {
@@ -76,7 +80,7 @@ ul {
 /* Currencies */
 
 .currencies-container {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
 }
 
