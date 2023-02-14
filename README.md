@@ -17,7 +17,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-<!-- - [🙏 Acknowledgements](#acknowledgements) -->
+- [🙏 Acknowledgements](#acknowledgements)
 <!-- - [❓ FAQ (OPTIONAL)](#faq) -->
 - [📝 License](#license)
 
@@ -53,15 +53,16 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO 
+LIVE DEMO 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link]()
+- [App walkthrough video](https://www.loom.com/share/fdcbed732ce64e028510f92358e1e724)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -141,13 +142,12 @@ Best regards,
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank... -->
+I would like to thank Nelson Sakwa the author of the original design, you can see the original design shown in his [Behance Project](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a> -->
 
 ## 📝 License <a name="license"></a>
 

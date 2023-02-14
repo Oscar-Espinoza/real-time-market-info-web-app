@@ -82,12 +82,18 @@ ul {
 .currencies-container {
   font-family: Lato, sans-serif;
   font-style: normal;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .currencies {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
 .currency {
@@ -135,4 +141,42 @@ ul {
   top: 5px;
   right: 5px;
   font-size: 15px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button.load-more {
+  background-color: #fff;
+  border: 1px solid #3a3556;
+  color: #3a3556;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button.show-less {
+  background-color: #fff;
+  border: 1px solid #3a3556;
+  color: #3a3556;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button.load-more:hover, button.show-less:hover {
+  background-color: #cf3f76;
+  border: 1px solid #fff;
+  color: #fff;
 }

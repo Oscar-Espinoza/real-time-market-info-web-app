@@ -1,5 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,6 +10,7 @@ import frontImg from '../../crypto.jpg';
 export default function Home() {
   const dispatch = useDispatch();
   const { loading, currencies } = useSelector((state) => state.currencies);
+  const [lastIndex, setLastIndex] = useState(10);
 
   useEffect(() => {
     dispatch(fetchCurrencies());
@@ -22,9 +23,9 @@ export default function Home() {
   }
 
   function getBackgroundColor(i) {
-    if (i % 2 === 0 && i !== 2 && i !== 6) {
-      return 'dark-bg';
-    } if (i === 3 || i === 7) {
+    if (i % 4 === 0) {
+      return 'light-bg';
+    } if (i % 2 === 0 || (i - 1) % 4 === 0) {
       return 'dark-bg';
     }
     return 'light-bg';
@@ -66,12 +67,12 @@ export default function Home() {
             <h3>1000+</h3>
             <p>Markets per coin</p>
           </li>
-          <li className="stat light-bg">
+          <li className="stat dark-bg">
             <h3>1,682</h3>
             <p>followers</p>
             <BsArrowRightCircle className="arrow-circle" />
           </li>
-          <li className="stat dark-bg">
+          <li className="stat light-bg">
             <h3>58</h3>
             <p>Hire me</p>
             <BsArrowRightCircle className="arrow-circle" />
@@ -80,7 +81,7 @@ export default function Home() {
       </section>
       <section className="currencies-container">
         <ul className="currencies">
-          {currencies.slice(0, 10).map((currency, i) => (
+          {currencies.slice(0, lastIndex).map((currency, i) => (
             <li
               className={`currency ${getBackgroundColor(i)}`}
               key={currency.id}
@@ -107,8 +108,33 @@ export default function Home() {
             </li>
           ))}
         </ul>
+        {currencies.length > 10 && (
+          <div className="buttons-wrapper">
+            {lastIndex + 10 < currencies.length && (
+            <button
+              type="button"
+              className="load-more"
+              onClick={() => {
+                setLastIndex(lastIndex + 10);
+              }}
+            >
+              Load more
+            </button>
+            )}
+            {lastIndex > 10 && (
+            <button
+              type="button"
+              className="show-less"
+              onClick={() => {
+                setLastIndex(lastIndex - 10);
+              }}
+            >
+              Show less
+            </button>
+            )}
+          </div>
+        )}
       </section>
-
     </div>
   );
 }
