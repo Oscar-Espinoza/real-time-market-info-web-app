@@ -175,7 +175,8 @@ button.show-less {
   transition: all 0.3s ease;
 }
 
-button.load-more:hover, button.show-less:hover {
+button.load-more:hover,
+button.show-less:hover {
   background-color: #cf3f76;
   border: 1px solid #fff;
   color: #fff;
