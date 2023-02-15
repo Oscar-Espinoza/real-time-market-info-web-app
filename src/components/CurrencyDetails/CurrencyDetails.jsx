@@ -3,11 +3,13 @@ import React from 'react';
 import { BsTriangleFill, BsCurrencyExchange, BsArrowLeftCircle } from 'react-icons/bs';
 import { Link, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import './CurrencyDetails.css';
 
-export default function CurrencyDetails() {
+export default function CurrencyDetails(props) {
   const { currencyName } = useParams();
+  const { views } = props;
   const currency = useSelector((state) => state.currencies.currencies
     .find((currency) => currency.name === currencyName));
 
@@ -36,15 +38,15 @@ export default function CurrencyDetails() {
           <BsCurrencyExchange />
         </div>
         <h2 className="title">
-          {currency.name}
+          {currency.name || ''}
           {' '}
           (
-          {currency.symbol}
+          {currency.symbol || ''}
           )
           {' '}
           <br />
           <span>
-            {Math.floor(Math.random() * 6000) + 1000}
+            {views || Math.floor(Math.random() * 6000) + 1000}
             {' '}
             Views
           </span>
@@ -54,17 +56,17 @@ export default function CurrencyDetails() {
       <div className="stats-separator dark-bg">
         Stats for
         {' '}
-        {currency.name}
+        {currency.name || ''}
       </div>
 
       <div className="currency-details-list">
         <div className="currency-details-row light-bg">
           <div className="currency-details-left">Rank:</div>
-          <div className="currency-details-right">{currency.rank}</div>
+          <div className="currency-details-right">{currency.rank || ''}</div>
         </div>
         <div className="currency-details-row dark-bg">
           <div className="currency-details-left">Supply:</div>
-          <div className="currency-details-right">{nFormatter(currency.supply)}</div>
+          <div className="currency-details-right">{nFormatter(currency.supply || '')}</div>
         </div>
         <div className="currency-details-row light-bg">
           <div className="currency-details-left">Max Supply:</div>
@@ -72,7 +74,7 @@ export default function CurrencyDetails() {
         </div>
         <div className="currency-details-row dark-bg">
           <div className="currency-details-left">Market Cap (USD):</div>
-          <div className="currency-details-right">{nFormatter(currency.marketCapUsd)}</div>
+          <div className="currency-details-right">{nFormatter(currency.marketCapUsd) || ''}</div>
         </div>
         <div className="currency-details-row light-bg">
           <div className="currency-details-left">Change (24hr):</div>
@@ -93,3 +95,11 @@ export default function CurrencyDetails() {
     </div>
   );
 }
+
+CurrencyDetails.propTypes = {
+  views: PropTypes.number,
+};
+
+CurrencyDetails.defaultProps = {
+  views: 1233,
+};

@@ -57,12 +57,10 @@ LIVE DEMO
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://crypto-market-app.onrender.com/)
 - [App walkthrough video](https://www.loom.com/share/fdcbed732ce64e028510f92358e1e724)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- GETTING STARTED
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -98,6 +96,10 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 npm test
+
+### Deployment
+
+You can deploy this app by using [Render](https://render.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
