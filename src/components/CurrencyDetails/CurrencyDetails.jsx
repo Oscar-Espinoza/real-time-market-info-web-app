@@ -1,4 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
+/* eslint-disable import/extensions */
 import React from 'react';
 import { BsTriangleFill, BsCurrencyExchange, BsArrowLeftCircle } from 'react-icons/bs';
 import { Link, useParams } from 'react-router-dom';
