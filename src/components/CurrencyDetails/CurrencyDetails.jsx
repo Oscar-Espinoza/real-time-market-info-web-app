@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import './CurrencyDetails.css';
+import './currencyDetails.css';
 
 export default function CurrencyDetails(props) {
   const { currencyName } = useParams();
