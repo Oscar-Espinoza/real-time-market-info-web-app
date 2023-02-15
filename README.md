@@ -58,7 +58,7 @@ LIVE DEMO
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://crypto-market-app.onrender.com/)
-- [App walkthrough video](https://www.loom.com/share/fdcbed732ce64e028510f92358e1e724)
+- [App walkthrough video](https://www.loom.com/share/fcdedb02cd184b7aa4a79c74e669d524)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

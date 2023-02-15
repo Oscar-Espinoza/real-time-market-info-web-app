@@ -36,7 +36,7 @@ describe('CurrencyDetails component', () => {
       <Provider store={store}>
         <MemoryRouter initialEntries={['/bitcoin']}>
           <Routes>
-            <Route path="/:currencyName" element={<CurrencyDetails />} />
+            <Route path="/:currencyName" element={<CurrencyDetails views={1233} />} />
           </Routes>
         </MemoryRouter>
       </Provider>,

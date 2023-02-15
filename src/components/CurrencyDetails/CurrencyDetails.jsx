@@ -46,7 +46,7 @@ export default function CurrencyDetails(props) {
           {' '}
           <br />
           <span>
-            {views || Math.floor(Math.random() * 6000) + 1000}
+            {views}
             {' '}
             Views
           </span>
@@ -101,5 +101,5 @@ CurrencyDetails.propTypes = {
 };
 
 CurrencyDetails.defaultProps = {
-  views: 1233,
+  views: Math.floor(Math.random() * 6000) + 1000,
 };
