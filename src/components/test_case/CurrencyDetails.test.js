@@ -2,7 +2,6 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-
 import CurrencyDetails from '../CurrencyDetails/CurrencyDetails';
 
 require('@testing-library/jest-dom');
